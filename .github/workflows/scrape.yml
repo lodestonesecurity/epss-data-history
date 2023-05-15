@@ -1,4 +1,4 @@
-name: Scrape latest Cisa Data
+name: Scrape latest EPSS Data
 
 on:
   push:
