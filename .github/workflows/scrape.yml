@@ -17,7 +17,7 @@ jobs:
         curl -O https://epss.cyentia.com/epss_scores-current.csv.gz
     - name: Unzip Current EPSS Data
       run: |-
-        tar -xf epss_scores-current.csv.gz
+        gunzip epss_scores-current.csv.gz
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
