@@ -14,7 +14,10 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data from EPSS
       run: |-
-        curl -o - https://epss.cyentia.com/epss_scores-current.csv.gz | gunzip > ./epss_scores-current.csv.gz
+        curl -L -O https://epss.cyentia.com/epss_scores-current.csv.gz
+    - name: Unzip Latest Data from EPSS
+      run: |- 
+        gunzip epss_scores-current.csv.gz
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
