@@ -1,4 +1,4 @@
-# epss_data_historu
+# epss_data_history
 
 [![Scrape latest EPSS Data](https://github.com/lodestonesecurity/epss_data_history/actions/workflows/scrape.yml/badge.svg)](https://github.com/lodestonesecurity/epss_data_history/actions/workflows/scrape.yml)
 
